@@ -1,2 +1,2 @@
-# Exercicios do python.org.br  para praticar e estudo
-- Estou fazendo os exercicios para praticar e aprender.
+# Exercicios do python.org.br  para praticar o estudo
+- Estou fazendo os exercicios para aprender praticando.
