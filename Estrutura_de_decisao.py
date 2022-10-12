@@ -1,13 +1,6 @@
 # Exercicio 1- Faça um Programa que peça dois números e imprima o maior deles.
 # O outro jeito tbm seria :
 '''
-numero1 = int(input('Digite um numero: '))
-numero2 = int(input('Digite mais um numero: '))
-lista = [numero1, numero2]
-print(f'O MAIOR É : {max(lista)}')
-
-'''
-# Tbm poderia usar for e in no lugar do While
 x = 0
 lista_num = []
 while x <= 1:
@@ -15,6 +8,11 @@ while x <= 1:
     lista_num += [numeros_para_lista]
     x += 1
 print(f'O MAIOR  NUMERO É : {max(lista_num)}')
+'''
+# Tbm poderia usar While
+numero1, numero2 = int(input('Digite um numero: ')), int(input('Digite mais um numero: '))
+lista = [numero1, numero2]
+print(f'O MAIOR É : {max(lista)}')
 print(f'\n')
 
 
