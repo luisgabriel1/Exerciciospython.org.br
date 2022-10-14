@@ -127,3 +127,70 @@ elif turnos == 'N':
 else:
     print('Valor Invalido')
 print('\n')
+
+
+# Exercicio 11- As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.
+# Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual: 
+# - Salários até R$ 280,00 (incluindo) : aumento de 20% 
+# - Salários entre R$ 280,00 e R$ 700,00 : aumento de 15% 
+# - Salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+# - Salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela: 
+# * O salário antes do reajuste;
+# * O percentual de aumento aplicado; 
+# * O valor do aumento; 
+# * O novo salário, após o aumento.
+salario = float(input('Informe seu salario: '))
+if salario <= 280:
+    salario_1 = salario * 1.2
+    print(f'Salario antes do reajuste: R${salario}\nPercentual de aumento aplicado: 20%\nO valor do aumento: R${salario * 0.2}\nSalario com o reajuste: R${salario_1}')
+elif salario > 280 and salario < 700:
+    salario_2 = salario * 1.15
+    print(f'Salario antes do reajuste: R${salario}\nPercentual de aumento aplicado: 15%\nO valor do aumento: R${salario * 0.15}\nSalario com o reajuste: R${salario_2}')
+elif salario >= 700 and salario < 1500:
+    salario_3 = salario * 1.1
+    print(f'Salario antes do reajuste: R${salario}\nPercentual de aumento aplicado: 10%\nO valor do aumento: R${salario * 0.1}\nSalario com o reajuste: R${salario_3}')
+elif salario >= 1500:
+    salario_4 = salario * 1.05
+    print(f'Salario antes do reajuste: R${salario}\nPercentual de aumento aplicado: 5%\nO valor do aumento: R${salario * 0.05}\nSalario com o reajuste: R${salario_4}')
+else:
+    print('Informe Apenas numeros')
+print('\n')
+
+
+# Exercicio 12- 
+
+print('\n')
+
+
+# Exercicio 13- Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido. 
+dias_pergunta = input('1- Domingo\n2- Segunda\n3- Terça\n4- Quarta\n5- Quinta\n6- Sexta\n7- Sabado')
+
+if dias_pergunta == '1':
+    print('Domingo')
+elif dias_pergunta =='2':
+    print('Segunda')
+elif dias_pergunta == '3':
+    print('Terça')
+elif dias_pergunta == '4':
+    print('Quarta')
+elif dias_pergunta == '5':
+    print('Quinta')
+elif dias_pergunta == '6':
+    print('Sexta')
+elif dias_pergunta == '7':
+    print('Sabado')
+else:
+    print('Valor Inválido')
+
+print('\n')
+
+
+# Exercicio 14- 
+
+print('\n')
+
+
+# Exercicio 15- 
+
+
+print('\n')
