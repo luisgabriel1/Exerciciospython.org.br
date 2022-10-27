@@ -157,7 +157,35 @@ else:
 print('\n')
 
 
-# Exercicio 12- 
+# Exercicio 12- Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês. 
+# Desconto do IR: 
+# Salário Bruto até 900 (inclusive) - isento 
+# Salário Bruto até 1500 (inclusive) - desconto de 5% 
+# Salário Bruto até 2500 (inclusive) - desconto de 10% 
+# Salário Bruto acima de 2500 - desconto de 20% Imprima na tela as informações, dispostas conforme o exemplo abaixo.
+
+h, vh = int(input('Quantas horas você trabalhou: ')), int(input('Qual o valor da sua hora: '))
+
+slb = h * vh
+clc_i1, clc_i2, clc_i3, clc_i4 = slb * 0.00, slb * 0.05, slb * 0.10, slb * 0.20
+clc_inss, clc_fgts = slb * 0.10, slb * 0.11
+tlt_1, tlt_2, tlt_3, tlt_4 = clc_i1 + clc_inss, clc_i2 + clc_inss, clc_i3 + clc_inss,  clc_i4 + clc_inss 
+
+
+if slb <= 900:
+    print(f'Salário Bruto: R${slb}\nIR: R${clc_i1}\nINSS: R${clc_inss}\nFGTS: R${clc_fgts}\nTotal De Descontos: R${tlt_1}\nSalário Liquido: R${slb - tlt_1}')
+
+elif slb > 900 and slb <= 1500:
+    print(f'Salário Bruto: R${slb}\nIR: R${clc_i2}\nINSS: R${clc_inss}\nFGTS: R${clc_fgts}\nTotal De Descontos: R${tlt_2}\nSalário Liquido: R${slb - tlt_2}')
+
+elif slb > 1500 and slb <= 2500:
+    print(f'Salário Bruto: R${slb}\nIR: R${clc_i3}\nINSS: R${clc_inss}\nFGTS: R${clc_fgts}\nTotal De Descontos: R${tlt_3}\nSalário Liquido: R${slb - tlt_3}')
+
+elif slb > 2500:
+    print(f'Salário Bruto: R${slb}\nIR: R${clc_i4}\nINSS: R${clc_inss}\nFGTS: R${clc_fgts}\nTotal De Descontos: R${tlt_4}\nSalário Liquido: R${slb - tlt_4}')
+
+else:
+    print('Valor Inválido')
 
 print('\n')
 
@@ -185,9 +213,17 @@ else:
 print('\n')
 
 
-# Exercicio 14- 
+# Exercicio 14- Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média.
+# Média de Aprovação   Conceito
+# Entre 9.0 e 10.0         A
+# Entre 7.5 e  9.0         B
+# Entre 6.0 e  7.5         C
+# Entre 4.0 e  6.0         D
+# Entre 4.0 e  0           E
 
-print('\n')
+
+
+
 
 
 # Exercicio 15- 
